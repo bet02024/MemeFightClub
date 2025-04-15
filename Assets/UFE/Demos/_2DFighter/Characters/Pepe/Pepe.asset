@@ -1,0 +1,117 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2e5269517f28664db5ccd78cbd208b1, type: 3}
+  m_Name: Pepe
+  m_EditorClassIdentifier: 
+  gameplayType: 0
+  profilePictureSmall: {fileID: 2800000, guid: 38eadac50daeb46a9be22973f8e37a3a, type: 3}
+  profilePictureBig: {fileID: 2800000, guid: 2c9ffdb8a2c2a42199f2d2b931059b0b, type: 3}
+  characterName: Pepe
+  gender: 0
+  characterDescription: "Pepe the most memeable memecoin in existence. The dogs have
+    had their day, it\u2019s time for Pepe to take reign."
+  selectionAnimation: {fileID: 7400000, guid: a2cdb6482655d4962b6236d3c2152338, type: 2}
+  selectionSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  height: 1.7
+  age: 24
+  bloodType: Unknown
+  lifePoints: 1000
+  maxGaugePoints: 400
+  characterPrefabStorage: 0
+  characterPrefab: {fileID: 8335042783301642776, guid: 07cbfcdaa221b4e13a37342161c2cd55,
+    type: 3}
+  prefabResourcePath: 
+  alternativeCostumes: []
+  initialPosition:
+    x:
+      _serializedValue: 0
+    y:
+      _serializedValue: 0
+    z:
+      _serializedValue: 0
+  initialRotation:
+    x:
+      _serializedValue: 0
+    y:
+      _serializedValue: 2463492096
+    z:
+      _serializedValue: 0
+    w:
+      _serializedValue: 3518231296
+  physics:
+    _moveForwardSpeed:
+      _serializedValue: 17179869184
+    _moveBackSpeed:
+      _serializedValue: 15032385536
+    _moveSidewaysSpeed:
+      _serializedValue: 17179869184
+    highMovingFriction: 1
+    _friction:
+      _serializedValue: 128849018880
+    canCrouch: 1
+    crouchDelay: 2
+    standingDelay: 2
+    canJump: 1
+    pressureSensitiveJump: 0
+    _jumpForce:
+      _serializedValue: 171798691840
+    _minJumpForce:
+      _serializedValue: 128849018880
+    minJumpDelay: 4
+    _jumpDistance:
+      _serializedValue: 34359738368
+    _jumpBackDistance:
+      _serializedValue: 34359738368
+    cumulativeForce: 1
+    multiJumps: 1
+    _weight:
+      _serializedValue: 751619276800
+    jumpDelay: 8
+    landingDelay: 7
+    _groundCollisionMass:
+      _serializedValue: 429496736
+  headLook:
+    enabled: 1
+    segments: []
+    nonAffectedJoints: []
+    target: 1
+    effect: 1
+    overrideAnimation: 1
+    disableOnHit: 1
+  customControls:
+    overrideControlFreak: 0
+    controlFreak2Prefab: {fileID: 0}
+    zAxisMovement: 0
+    disableJump: 0
+    disableCrouch: 0
+    jumpButton: 2
+    crouchButton: 3
+  hideGauges: 00000000000000000000
+  _executionTiming:
+    _serializedValue: 1288490240
+  possibleAirMoves: 1
+  _blendingTime:
+    _serializedValue: 257698032
+  animationType: 1
+  avatar: {fileID: 9000000, guid: 8a7a38fe3795c4a0ba9e506797e7ec6d, type: 3}
+  useScaleFlip: 1
+  applyRootMotion: 0
+  animationFlow: 0
+  useAnimationMaps: 1
+  normalizeAnimationFrames: 0
+  stanceResourcePath:
+  - _2DFighter\MoveSets\Robot_Kyle
+  moves: []
+  aiInstructionsSet:
+  - aiInfo: {fileID: 11400000, guid: 50d4630698994bd45b6f19bf649b3a90, type: 2}
+    behavior: 0

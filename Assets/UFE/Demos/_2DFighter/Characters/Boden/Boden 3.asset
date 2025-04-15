@@ -1,0 +1,127 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2e5269517f28664db5ccd78cbd208b1, type: 3}
+  m_Name: Boden 3
+  m_EditorClassIdentifier: 
+  gameplayType: 0
+  profilePictureSmall: {fileID: 2800000, guid: c82c9338cd58242f29674be70e969005, type: 3}
+  profilePictureBig: {fileID: 2800000, guid: 313021dc8186545439b6f034fbc6fd62, type: 3}
+  characterName: Im Boden
+  gender: 1
+  characterDescription: 'Im Boden is da hartfelt leeder of Amuriku. His mishun is
+    to bild bak betta, to unify da divided, n to counter da wild claims of Doland
+    Tremp. '
+  selectionAnimation: {fileID: 7400000, guid: f07c6459e5af54baa9a487c42a1c32f1, type: 2}
+  selectionSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  height: 1.8
+  age: 70
+  bloodType: Unknown
+  lifePoints: 1400
+  maxGaugePoints: 400
+  characterPrefabStorage: 0
+  characterPrefab: {fileID: 4223277285948428721, guid: 161dbd373e66d476f92d9a08e910d362,
+    type: 3}
+  prefabResourcePath: 
+  alternativeCostumes: []
+  initialPosition:
+    x:
+      _serializedValue: 0
+    y:
+      _serializedValue: 0
+    z:
+      _serializedValue: 0
+  initialRotation:
+    x:
+      _serializedValue: 0
+    y:
+      _serializedValue: 3037000704
+    z:
+      _serializedValue: 0
+    w:
+      _serializedValue: 3037000704
+  physics:
+    _moveForwardSpeed:
+      _serializedValue: 17179869184
+    _moveBackSpeed:
+      _serializedValue: 15032385536
+    _moveSidewaysSpeed:
+      _serializedValue: 17179869184
+    highMovingFriction: 1
+    _friction:
+      _serializedValue: 128849018880
+    canCrouch: 1
+    crouchDelay: 2
+    standingDelay: 2
+    canJump: 1
+    pressureSensitiveJump: 0
+    _jumpForce:
+      _serializedValue: 171798691840
+    _minJumpForce:
+      _serializedValue: 128849018880
+    minJumpDelay: 4
+    _jumpDistance:
+      _serializedValue: 34359738368
+    _jumpBackDistance:
+      _serializedValue: 34359738368
+    cumulativeForce: 1
+    multiJumps: 1
+    _weight:
+      _serializedValue: 751619276800
+    jumpDelay: 8
+    landingDelay: 7
+    _groundCollisionMass:
+      _serializedValue: 8589934592
+  headLook:
+    enabled: 0
+    segments:
+    - firstTransform: {fileID: 0}
+      lastTransform: {fileID: 0}
+      bodyPart: 1
+      thresholdAngleDifference: 1
+      bendingMultiplier: 0.8
+      maxAngleDifference: 20
+      maxBendingAngle: 15
+      responsiveness: 4
+    nonAffectedJoints: []
+    target: 1
+    effect: 1
+    overrideAnimation: 1
+    disableOnHit: 1
+  customControls:
+    overrideControlFreak: 0
+    controlFreak2Prefab: {fileID: 0}
+    zAxisMovement: 0
+    disableJump: 0
+    disableCrouch: 0
+    jumpButton: 2
+    crouchButton: 3
+  hideGauges: 00000000000000000000
+  _executionTiming:
+    _serializedValue: 1288490240
+  possibleAirMoves: 1
+  _blendingTime:
+    _serializedValue: 85899344
+  animationType: 1
+  avatar: {fileID: 9000000, guid: 972061508165f4e529dc0955b5058f2a, type: 3}
+  useScaleFlip: 1
+  applyRootMotion: 0
+  animationFlow: 0
+  useAnimationMaps: 1
+  normalizeAnimationFrames: 1
+  stanceResourcePath:
+  - _2DFighter\MoveSets\Ethan_Stance_1
+  - _2DFighter\MoveSets\Ethan_Stance_2
+  moves: []
+  aiInstructionsSet:
+  - aiInfo: {fileID: 11400000, guid: 50d4630698994bd45b6f19bf649b3a90, type: 2}
+    behavior: 4

@@ -1,0 +1,36 @@
+{
+  "project_info": {
+    "project_number": "695718171297",
+    "project_id": "memefightclub-4ce18",
+    "storage_bucket": "memefightclub-4ce18.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:695718171297:ios:0944fb59f4ef8bc4d496e0",
+        "android_client_info": {
+          "package_name": "club.memefight"
+        }
+      },
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWQvhfTjXjYeZkydOOZdtuOdKQQ2H4DFA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 0
+        },
+        "appinvite_service": {
+          "status": 1
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "695718171297-7s5gjqv9cd1rqn1ms61npunngtgtm4n2.apps.googleusercontent.com"
+        }
+      ]
+    }
+  ],
+  "configuration_version": "1"
+}

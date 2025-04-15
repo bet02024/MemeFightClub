@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>695718171297-7s5gjqv9cd1rqn1ms61npunngtgtm4n2.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.695718171297-7s5gjqv9cd1rqn1ms61npunngtgtm4n2</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCWQvhfTjXjYeZkydOOZdtuOdKQQ2H4DFA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>695718171297</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>club.memefight</string>
+	<key>PROJECT_ID</key>
+	<string>memefightclub-4ce18</string>
+	<key>STORAGE_BUCKET</key>
+	<string>memefightclub-4ce18.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:695718171297:ios:0944fb59f4ef8bc4d496e0</string>
+</dict>
+</plist>

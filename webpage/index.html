@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zxx" class="js">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Meme Fight Club, memecoin">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Meme Fight Club, memecoin">
+<meta property="og:url" content="https://memefight.club/"/>
+<meta property="og:title" content="Meme Fight Club Game"/>
+<meta property="og:image" content="https://memefight.club/assets/images/white_house.png"/>
+<meta property="og:image:secure_url" content="https://memefight.club/assets/images/white_house.png"/>
+<meta property="og:description" content="Meme Fight Club video game v 0.1"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Meme Fight Club"/>
+<meta name="twitter:card" content="https://memefight.club/assets/images/white_house.png">
+<meta name="twitter:site_name" content="Meme Fight Club"/>
+<meta name="twitter:title" content="Meme Fight Club"/>
+<meta name="twitter:description" content="Meme Fight Club video game v 0.1"/>
+<meta name="twitter:image" content="https://memefight.club/assets/images/white_house.png"/>
+<meta property="twitter:site" content="@memefightclub"/>
+<!-- Fav Icon  -->
+<link rel="shortcut icon" href="images/favicon.png">
+<!-- Site Title  -->
+<title>Welcome to Meme Fight Club</title>
+<!-- Bundle and Base CSS -->
+<link rel="stylesheet" href="assets/css/vendor.bundle.css">
+<link rel="stylesheet" href="assets/css/style.css" id="changeTheme">
+
+<!-- Extra CSS -->
+</head>
+    <body class="nk-body body-wider mode-onepage">
+	<div class="nk-wrap">
+		<header class="nk-header page-header is-transparent" id="header">
+		    <!-- Header @s -->
+			<div class="header-main">
+				<div class="header-container container">
+					<div class="header-wrap">
+						<!-- Menu Toogle @s -->
+						<!-- Menu @s -->
+						<div class="header-navbar " >
+							<nav class="header-menu" id="header-menu">
+								<ul class="menu">
+									<li class="menu-item"><a class="menu-link nav-link" href="#roadmap" >Roadmap</a></li>
+									<li class="menu-item"><a class="menu-link nav-link" href="https://t.me/memefightclub" target="_blank"><em class="fab fa-telegram"></em> Telegram</a></li>
+									<li class="menu-item"><a class="menu-link nav-link" href="https://twitter.com/memefightclub" target="_blank"><em class="fab fa-twitter"></em> Twitter</a></li>
+								</ul>
+							</nav>
+						</div><!-- .header-navbar @e -->
+					</div>
+				</div>
+			</div><!-- .header-main @e -->
+			<!-- Banner @s -->
+			<div class="header-banner bg-theme-kyttoys">
+				<div class="">
+				    <div class="banner">
+				        <div class="banner-wrap">
+                                <div class="row align-items-center justify-content-lg-between justify-content-center">
+									<div class="col-lg-2 col-xl-2 col-sm-2 text-center text-lg-center" style="padding: 0px;">
+										<img style="width: 100%; padding: 0px;" src="assets/images/mfc_controls.png">
+										<div id="unity-fullscreen-button"  alt="Full Screen"></div>
+										<h1 class="cpn-head title-color title-dark text-center text-lg-center" style=" padding: 20px;">
+											Let's build utility around memecoins	 
+											<div >
+
+												<button onclick="startRandomGame1('Solana')"> button 1</button>
+												<button onclick="startRandomGame2()"> button 2</button>
+												<button onclick="startRandomGame3()"> button 3</button>
+	
+											</div>
+	
+										</h1>
+										
+									</div>
+									<div class="col-lg-10 col-xl-10 col-sm-10 text-center text-lg-center">
+
+										<div id="unity-container" class="unity-desktop">
+											<canvas id="unity-canvas" width=1200 height=800>
+											</canvas>
+											<div id="unity-loading-bar">
+											  <div id="unity-progress-bar-empty" class="align-items-center justify-content-lg-between justify-content-center">
+
+												<div id="unity-progress-bar-full"  class="align-items-center justify-content-lg-between justify-content-center" >Loading ...</div>
+												<div id="unity-logo"></div>
+											  </div>
+											</div>
+											<div id="unity-warning"> </div>
+											<div id="unity-footer" class="align-items-center justify-content-lg-between justify-content-center">
+											</div>
+										  </div>
+									</div> 
+									<script>
+										var container = document.querySelector("#unity-container");
+										var canvas = document.querySelector("#unity-canvas");
+										var loadingBar = document.querySelector("#unity-loading-bar");
+										var progressBarFull = document.querySelector("#unity-progress-bar-full");
+										var fullscreenButton = document.querySelector("#unity-fullscreen-button");
+										var warningBanner = document.querySelector("#unity-warning");
+										var gameInstance;
+										function startRandomGame1(room){										
+											gameInstance.SendMessage('ScriptConnector', 'GoToRandomMatchScreen');
+										}
+										function startRandomGame2(){										
+											gameInstance.SendMessage('ScriptConnector', 'GoToRandomMatchScreen2');
+										}
+									 
+
+										fullscreenButton.style.display = "none";
+										function unityShowBanner(msg, type) {
+										  function updateBannerVisibility() {
+											warningBanner.style.display = warningBanner.children.length ? 'block' : 'none';
+										  }
+										  var div = document.createElement('div');
+										  div.innerHTML = msg;
+										  warningBanner.appendChild(div);
+										  if (type == 'error') div.style = 'background: red; padding: 10px;';
+										  else {
+											if (type == 'warning') div.style = 'background: yellow; padding: 10px;';
+											setTimeout(function() {
+											  warningBanner.removeChild(div);
+											  updateBannerVisibility();
+											}, 5000);
+										  }
+										  updateBannerVisibility();
+										}
+
+										var buildUrl = "https://memefigthclub.b-cdn.net";
+										var loaderUrl = buildUrl + "/WebGL Builds.loader.js";
+										var config = {
+										  dataUrl: buildUrl + "/WebGL Builds2.data",
+										  frameworkUrl:  buildUrl + "/WebGL Builds2.framework.js",
+										  codeUrl: buildUrl + "/WebGL Builds2.wasm",
+										  streamingAssetsUrl: "game/StreamingAssets",
+										  companyName: "Meme Fight Club",
+										  productName: "Meme Fight Club",
+										  productVersion: "Beta 1.0",
+										  showBanner: unityShowBanner,
+										};
+								  
+										if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+										  // Mobile device style: fill the whole browser client area with the game canvas:
+										  var meta = document.createElement('meta');
+										  meta.name = 'viewport';
+										  meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+										  document.getElementsByTagName('head')[0].appendChild(meta);
+										  container.className = "unity-mobile";
+										  canvas.style.width = window.innerWidth + 'px';
+										  canvas.style.height = window.innerHeight + 'px';
+										  unityShowBanner('Meme Fight Club game is not supported on mobile devices.');
+										} else {
+										  // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
+										  canvas.style.width = "1200px";
+										  canvas.style.height = "800px";
+										}
+										loadingBar.style.display = "block";
+										var script = document.createElement("script");
+										script.src = loaderUrl;
+										script.onload = () => {
+										  createUnityInstance(canvas, config, (progress) => {
+											document.getElementById("unity-progress-bar-full").innerHTML = "Loading game: " + parseInt(100 * progress) + "%";
+										  }).then((unityInstance) => {
+											loadingBar.style.display = "none";
+											fullscreenButton.style.display = "block";
+											fullscreenButton.onclick = () => {
+											  unityInstance.SetFullscreen(1);
+											};
+											gameInstance = unityInstance;
+										  }).catch((message) => {
+											alert(message);
+										  });
+										};
+										document.body.appendChild(script);
+									  </script>
+							    </div><!-- .row -->
+                        </div>
+				    </div>
+					<div class="row">
+						<div class="wrapper">
+							<div class="sliding-background">
+							</div>
+						</div>
+					</div>
+				</div><!-- .nk-banner -->
+				<div class="nk-ovm  shape-z"></div>
+			</div>
+			<!-- .header-banner @e -->
+		</header>
+
+        <main class="nk-pages">
+            <section class="section bg-6950673 section-t-m" id="roadmap">
+                <div class="row">
+                    <!-- Block @s -->
+                    <div class="nk-block nk-block-features">
+                        <div class="row justify-content-center">
+							<div class="col-lg-1 col-md-1">
+							</div>
+                            <div class="col-lg-5 col-md-5 text-center text-lg-center justify-content-center">
+								<h1 class="cpn-head title-color title-dark">
+									ROADMAP
+								</h1>
+								<h3 class="cpn-head  title-pink-small text-left text-lg-left" data-animate="fadeInUp" data-delay="0">
+									MFC Beta version: April 2024<br><br>
+									MFC Final version: July 2024<br>
+									Features: <br><br>
+									Beet on Fights: bet on the best players, in a fun way using the $MFC Token.<br><br>
+									Online Tournaments: Engage with players worldwide in thrilling competitions using the $MFC Token.<br><br>
+									20 Fighters, Special Moves & Attacks Choose from a diverse roster of fighters, each with unique abilities and devastating special attacks to turn the tide of battle.<br><br><br>
+																		
+									League of Memes ($LOM)<br><br>
+									Beta version: December 2024<br><br>
+									LOM will revolutionize multiplayer gaming, drawing inspiration from the acclaimed League of Legends (LoL), to establish a captivating metaverse for MemeCoins enthusiasts.<br>
+
+									All $MFC holders will receive an $LOM airdrop
+
+								</h3>  
+                            </div><!-- .col --> 
+							<div class="col-lg-6 col-md-6 text-center text-lg-center justify-content-center">
+
+								<h1 class="cpn-head title-color title-dark ">
+									Presale
+								</h1>
+								<img style="width: 500px" src="assets/images/white_house.png" alt="MFC">
+								<div class="text-center text-lg-center justify-content-center">
+									<h2 class="cpn-head title-pink" data-animate="fadeInUp" data-delay="0">
+										Presale:  May 2024<br><br>
+										Total supply: 100,000,000 $MFC<br>
+										Marketing & Airdrop (5%): 5,000,000 <br>
+										Team (2%): 2,000,000 <br>
+										Game Development (8%): 8,000,000<br>
+										Presale & LP (85%): 85,000,000<br>
+										<ul class=" text-center text-lg-cente align-items-center justify-content-lg-between justify-content-center">
+											<li>
+											<ul class="btn-grp btn-grp-after gutter-30px">
+												<li class="header-menu menu-item menu-link nav-link"><a href="https://twitter.com/memefightclub"  target="_blank"><em class="fab fa-twitter"></em></a></li>
+												<li class="menu-item menu-link nav-link"><a href="https://t.me/memefightclub" target="_blank"><em class="fab fa-telegram"></em></a></li>
+											</ul>
+											</li>
+										</ul>
+									</h2> 
+								</div>
+                            </div><!-- .col --> 
+                        </div><!-- .row --> 
+                    </div><!-- .block @e -->
+                    <!-- Block @s -->
+                </div>
+				<div class=" text-center text-lg-center justify-content-center">
+                    <div class="nk-block nk-block-features">
+						<div class="banner-gfx text-center animated cpn-head title-color title-dark" data-animate="fadeInUp" data-delay="0">
+							<br>
+							$MFC is a memecoin with no intrinsic value or expectation of financial return, it will be used in our game to participate in tournaments, to buy boosters & special moves<br>
+						</div>
+                    </div><!-- .block @e -->
+                    <!-- Block @s -->
+                </div>
+		</section>  
+        </main>
+	</div>
+
+
+	<!-- JavaScript -->
+	<script src="assets/js/jquery.bundle.js?ver=192"></script>
+	<script src="assets/js/scripts.js?ver=192"></script>
+</body>
+
+</html>

@@ -1,0 +1,943 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a72eb99efd94a347a4ab4cc0376dbb1, type: 3}
+  m_Name: New UFE Config
+  m_EditorClassIdentifier: 
+  version: 0
+  player1Character: {fileID: 0}
+  player2Character: {fileID: 0}
+  player1Team: []
+  player2Team: []
+  selectedStage:
+    stageName: 
+    stageLoadingMethod: 0
+    stagePath: 
+    screenshot: {fileID: 0}
+    prefab: {fileID: 0}
+    music: {fileID: 0}
+    _groundFriction:
+      _serializedValue: 429496729600
+    _leftBoundary:
+      _serializedValue: -163208757248
+    _rightBoundary:
+      _serializedValue: 163208757248
+    position:
+      x:
+        _serializedValue: 0
+      y:
+        _serializedValue: 0
+      z:
+        _serializedValue: 0
+  gameName: 
+  gameplayType: 0
+  selectedLanguage:
+    languageName: English
+    start: Start
+    options: Options
+    credits: Credits
+    selectYourCharacter: Select Your Character
+    selectYourStage: Select Your Stage
+    round: Round %round%
+    finalRound: Final Round
+    fight: Fight!
+    firstHit: First Hit!
+    combo: '%number% hit combo!'
+    parry: Parry!
+    counterHit: Counter!
+    victory: '%character% wins!'
+    challengeBegins: Start!
+    challengeEnds: Success!
+    timeOver: Time Over
+    perfect: Perfect!
+    rematch: Rematch
+    quit: Quit
+    ko: K.O.
+    draw: Draw
+    defaultSelection: 0
+  gameGUI:
+    hasGauge: 1
+    screenFadeDuration:
+      _serializedValue: 2147483648
+    gameFadeDuration:
+      _serializedValue: 2147483648
+    roundFadeDuration:
+      _serializedValue: 2147483648
+    screenFadeColor: {r: 0, g: 0, b: 0, a: 1}
+    gameFadeColor: {r: 0, g: 0, b: 0, a: 1}
+    roundFadeColor: {r: 0, g: 0, b: 0, a: 1}
+    useCanvasScaler: 0
+    canvasScaler:
+      defaultSpriteDPI: 96
+      fallbackScreenDPI: 96
+      matchWidthOrHeight: 0
+      physicalUnit: 3
+      referencePixelsPerUnit: 100
+      referenceResolution: {x: 1920, y: 1080}
+      scaleFactor: 1
+      screenMatchMode: 0
+      scaleMode: 0
+    introScreen: {fileID: 0}
+    mainMenuScreen: {fileID: 0}
+    optionsScreen: {fileID: 0}
+    creditsScreen: {fileID: 0}
+    pauseScreen: {fileID: 0}
+    characterSelectionScreen: {fileID: 0}
+    teamSelectionScreen: {fileID: 0}
+    stageSelectionScreen: {fileID: 0}
+    loadingBattleScreen: {fileID: 0}
+    battleGUI: {fileID: 0}
+    storyModeContinueScreen: {fileID: 0}
+    storyModeGameOverScreen: {fileID: 0}
+    storyModeCongratulationsScreen: {fileID: 0}
+    versusModeScreen: {fileID: 0}
+    versusModeAfterBattleScreen: {fileID: 0}
+    challengeModeScreen: {fileID: 0}
+    challengeModeOverlay: {fileID: 0}
+    challengeModeAfterBattleScreen: {fileID: 0}
+    connectionLostScreen: {fileID: 0}
+    replayTools: {fileID: 0}
+    hostGameScreen: {fileID: 0}
+    joinGameScreen: {fileID: 0}
+    networkOptionsScreen: {fileID: 0}
+    roomMatchScreen: {fileID: 0}
+    bluetoothGameScreen: {fileID: 0}
+    bluetoothHostGameScreen: {fileID: 0}
+    bluetoothJoinGameScreen: {fileID: 0}
+    randomMatchScreen: {fileID: 0}
+    searchMatchScreen: {fileID: 0}
+    onlineModeAfterBattleScreen: {fileID: 0}
+  storyMode:
+    useSameStoryForAllCharacters: 0
+    canCharactersFightAgainstThemselves: 0
+    defaultStory:
+      opening: {fileID: 0}
+      ending: {fileID: 0}
+      fightsGroups: []
+      showStoryInEditor: 0
+    selectableCharactersInStoryMode: 
+    selectableCharactersInVersusMode: 
+    characterStories:
+      _keys: 
+      _values: []
+  fps: 60
+  _gameSpeed:
+    _serializedValue: 4294967296
+  executionBufferTime: 10
+  executionBufferType: 0
+  plinkingDelay: 1
+  _preloadingTime:
+    _serializedValue: 4294967296
+  preloadStage: 1
+  preloadHitEffects: 1
+  warmAllShaders: 1
+  _gravity:
+    _serializedValue: 1589137899
+  detect3D_Hits: 0
+  lockZAxis: 1
+  runInBackground: 0
+  useFixedUpdateInputs: 0
+  sortCharacterOnHit: 0
+  foregroundSortLayer: 0
+  backgroundSortLayer: 0
+  languages:
+  - languageName: English
+    start: Start
+    options: Options
+    credits: Credits
+    selectYourCharacter: Select Your Character
+    selectYourStage: Select Your Stage
+    round: Round %round%
+    finalRound: Final Round
+    fight: Fight!
+    firstHit: First Hit!
+    combo: '%number% hit combo!'
+    parry: Parry!
+    counterHit: Counter!
+    victory: '%character% wins!'
+    challengeBegins: Start!
+    challengeEnds: Success!
+    timeOver: Time Over
+    perfect: Perfect!
+    rematch: Rematch
+    quit: Quit
+    ko: K.O.
+    draw: Draw
+    defaultSelection: 0
+  deploymentOptions:
+    deploymentType: 0
+    activeCharacters:
+    - {fileID: 0}
+    - {fileID: 0}
+    AIControlled: 0000
+    selectedTeamMode: 0
+    skipLoadingScreen: 0
+  cameraOptions:
+    initialDistance: {x: 0, y: 0, z: 0}
+    initialRotation: {x: 0, y: 0, z: 0}
+    enableLookAt: 0
+    dollyAngle: 0
+    distance3d: 0
+    height3d: 0
+    stabilizeDolly: 1
+    enableZoom: 1
+    followCharacters: 1
+    initialFieldOfView: 0
+    verticalPriority: 0
+    verticalThreshold: 0
+    movementSpeed: 15
+    minZoom: 38
+    maxZoom: 54
+    _maxDistance:
+      _serializedValue: 94489280512
+    rotationSpeed: 20
+    heightOffSet: 4
+    rotationOffSet: {x: 0, y: 4, z: 0}
+    motionSensor: 0
+    motionSensibility: 1
+  lockOnOptions:
+    lockOnType: 0
+    lockOnButtonEnabled: 0
+    lockOnButton: 0
+    lockOutEnabled: 0
+    lockOutButton: 0
+    targetSwitchType: 0
+    switchButton: 0
+    rotationSpeed:
+      _serializedValue: 0
+  characterRotationOptions:
+    alwaysFaceOpponent: 1
+    autoMirror: 1
+    rotateWhileJumping: 0
+    rotateOnMoveOnly: 0
+    allowAirBorneSideSwitch: 0
+    fixRotationWhenStunned: 0
+    fixRotationWhenBlocking: 1
+    fixRotationOnHit: 1
+    allowCornerStealing: 1
+    smoothRotation: 1
+    _rotationSpeed:
+      _serializedValue: 0
+    _mirrorBlending:
+      _serializedValue: 0
+  roundOptions:
+    totalRounds: 3
+    hasTimer: 1
+    _timer:
+      _serializedValue: 425201762304
+    _timerSpeed:
+      _serializedValue: 429496729600
+    _p1XPosition:
+      x:
+        _serializedValue: -21474836480
+      y:
+        _serializedValue: 0
+      z:
+        _serializedValue: 0
+    _p2XPosition:
+      x:
+        _serializedValue: 21474836480
+      y:
+        _serializedValue: 0
+      z:
+        _serializedValue: 0
+    _p1XRotation:
+      x:
+        _serializedValue: 0
+      y:
+        _serializedValue: 386547056640
+      z:
+        _serializedValue: 0
+    _p2XRotation:
+      x:
+        _serializedValue: 0
+      y:
+        _serializedValue: -386547056640
+      z:
+        _serializedValue: 0
+    _endGameDelay:
+      _serializedValue: 17179869184
+    _showMenuDelay:
+      _serializedValue: 15032385536
+    _newRoundDelay:
+      _serializedValue: 4294967296
+    _slowMoTimer:
+      _serializedValue: 12884901888
+    _slowMoSpeed:
+      _serializedValue: 858993459
+    victoryMusic: {fileID: 0}
+    resetLifePoints: 1
+    resetPositions: 1
+    allowMovementStart: 1
+    allowMovementEnd: 1
+    playIntrosAtSameTime: 0
+    inhibitGaugeGain: 1
+    rotateBodyKO: 1
+    slowMotionKO: 1
+    cameraZoomKO: 1
+    freezeCamAfterOutro: 1
+  groundBounceOptions:
+    bounceForce: 0
+    bouncePrefab: {fileID: 0}
+    bounceKillTime: 2
+    _minimumBounceForce:
+      _serializedValue: 0
+    _maximumBounces:
+      _serializedValue: 0
+    sticky: 0
+    bounceHitBoxes: 1
+    shakeCamOnBounce: 1
+    _shakeDensity:
+      _serializedValue: 0
+    bounceSound: {fileID: 0}
+  wallBounceOptions:
+    bounceForce: 0
+    bouncePrefab: {fileID: 0}
+    bounceKillTime: 2
+    _minimumBounceForce:
+      _serializedValue: 0
+    _maximumBounces:
+      _serializedValue: 0
+    sticky: 0
+    bounceHitBoxes: 1
+    shakeCamOnBounce: 1
+    _shakeDensity:
+      _serializedValue: 0
+    bounceSound: {fileID: 0}
+  counterHitOptions:
+    startUpFrames: 1
+    activeFrames: 0
+    recoveryFrames: 0
+    _damageIncrease:
+      _serializedValue: 42949672960
+    _hitStunIncrease:
+      _serializedValue: 214748364800
+    sound: {fileID: 0}
+  comboOptions:
+    comboDisplayMode: 0
+    hitStunDeterioration: 0
+    damageDeterioration: 0
+    airJuggleDeterioration: 0
+    _minHitStun: 0
+    _minDamage:
+      _serializedValue: 0
+    _minPushForce:
+      _serializedValue: 0
+    maxConsecutiveCrumple: 1
+    airJuggleDeteriorationType: 0
+    neverAirRecover: 0
+    airRecoveryType: 1
+    resetFallingForceOnHit: 1
+    maxCombo: 99
+    _knockBackMinForce:
+      _serializedValue: 0
+    neverCornerPush: 0
+    fixJuggleWeight: 1
+    _juggleWeight:
+      _serializedValue: 0
+  blockOptions:
+    blockType: 0
+    allowAirBlock: 0
+    ignoreAppliedForceBlock: 0
+    allowMoveCancel: 0
+    blockHitEffects:
+      hitParticle: {fileID: 0}
+      killTime: 0
+      hitSound: {fileID: 0}
+      spawnPoint: 1
+      _freezingTime:
+        _serializedValue: 0
+      _animationSpeed:
+        _serializedValue: 429496729
+      autoHitStop: 1
+      sticky: 0
+      _hitStop:
+        _serializedValue: 429496729
+      mirrorOn2PSide: 0
+      shakeCharacterOnHit: 1
+      shakeCameraOnHit: 1
+      _shakeDensity:
+        _serializedValue: 3435973836
+      _shakeCameraDensity:
+        _serializedValue: 3435973836
+      editorToggle: 0
+    parryType: 0
+    _parryTiming:
+      _serializedValue: 0
+    parryStunType: 0
+    parryStunFrames: 10
+    parryColor: {r: 0, g: 0, b: 0, a: 0}
+    allowAirParry: 0
+    highlightWhenParry: 0
+    resetButtonSequence: 0
+    easyParry: 0
+    ignoreAppliedForceParry: 0
+    parryHitEffects:
+      hitParticle: {fileID: 0}
+      killTime: 0
+      hitSound: {fileID: 0}
+      spawnPoint: 1
+      _freezingTime:
+        _serializedValue: 0
+      _animationSpeed:
+        _serializedValue: 429496729
+      autoHitStop: 1
+      sticky: 0
+      _hitStop:
+        _serializedValue: 429496729
+      mirrorOn2PSide: 0
+      shakeCharacterOnHit: 1
+      shakeCameraOnHit: 1
+      _shakeDensity:
+        _serializedValue: 3435973836
+      _shakeCameraDensity:
+        _serializedValue: 3435973836
+      editorToggle: 0
+    blockPushForce: 0
+    pushBlockButtons: 
+  knockDownOptions:
+    air:
+      _knockedOutTime:
+        _serializedValue: 8589934592
+      _standUpTime:
+        _serializedValue: 2576980377
+      hideHitBoxesOnFrame: 10
+      hideHitBoxes: 0
+      editorToggle: 0
+      hasQuickStand: 0
+      _predefinedPushForce:
+        x:
+          _serializedValue: 0
+        y:
+          _serializedValue: 0
+        z:
+          _serializedValue: 0
+      quickStandButtons: 
+      minQuickStandTime:
+        _serializedValue: 0
+      hasDelayedStand: 0
+      delayedStandButtons: 
+      maxDelayedStandTime:
+        _serializedValue: 0
+    high:
+      _knockedOutTime:
+        _serializedValue: 8589934592
+      _standUpTime:
+        _serializedValue: 2576980377
+      hideHitBoxesOnFrame: 10
+      hideHitBoxes: 0
+      editorToggle: 0
+      hasQuickStand: 0
+      _predefinedPushForce:
+        x:
+          _serializedValue: 0
+        y:
+          _serializedValue: 0
+        z:
+          _serializedValue: 0
+      quickStandButtons: 
+      minQuickStandTime:
+        _serializedValue: 0
+      hasDelayedStand: 0
+      delayedStandButtons: 
+      maxDelayedStandTime:
+        _serializedValue: 0
+    highLow:
+      _knockedOutTime:
+        _serializedValue: 8589934592
+      _standUpTime:
+        _serializedValue: 2576980377
+      hideHitBoxesOnFrame: 10
+      hideHitBoxes: 0
+      editorToggle: 0
+      hasQuickStand: 0
+      _predefinedPushForce:
+        x:
+          _serializedValue: 0
+        y:
+          _serializedValue: 0
+        z:
+          _serializedValue: 0
+      quickStandButtons: 
+      minQuickStandTime:
+        _serializedValue: 0
+      hasDelayedStand: 0
+      delayedStandButtons: 
+      maxDelayedStandTime:
+        _serializedValue: 0
+    sweep:
+      _knockedOutTime:
+        _serializedValue: 8589934592
+      _standUpTime:
+        _serializedValue: 2576980377
+      hideHitBoxesOnFrame: 10
+      hideHitBoxes: 0
+      editorToggle: 0
+      hasQuickStand: 0
+      _predefinedPushForce:
+        x:
+          _serializedValue: 0
+        y:
+          _serializedValue: 0
+        z:
+          _serializedValue: 0
+      quickStandButtons: 
+      minQuickStandTime:
+        _serializedValue: 0
+      hasDelayedStand: 0
+      delayedStandButtons: 
+      maxDelayedStandTime:
+        _serializedValue: 0
+    crumple:
+      _knockedOutTime:
+        _serializedValue: 8589934592
+      _standUpTime:
+        _serializedValue: 2576980377
+      hideHitBoxesOnFrame: 10
+      hideHitBoxes: 0
+      editorToggle: 0
+      hasQuickStand: 0
+      _predefinedPushForce:
+        x:
+          _serializedValue: 0
+        y:
+          _serializedValue: 0
+        z:
+          _serializedValue: 0
+      quickStandButtons: 
+      minQuickStandTime:
+        _serializedValue: 0
+      hasDelayedStand: 0
+      delayedStandButtons: 
+      maxDelayedStandTime:
+        _serializedValue: 0
+    wallbounce:
+      _knockedOutTime:
+        _serializedValue: 8589934592
+      _standUpTime:
+        _serializedValue: 2576980377
+      hideHitBoxesOnFrame: 10
+      hideHitBoxes: 0
+      editorToggle: 0
+      hasQuickStand: 0
+      _predefinedPushForce:
+        x:
+          _serializedValue: 0
+        y:
+          _serializedValue: 0
+        z:
+          _serializedValue: 0
+      quickStandButtons: 
+      minQuickStandTime:
+        _serializedValue: 0
+      hasDelayedStand: 0
+      delayedStandButtons: 
+      maxDelayedStandTime:
+        _serializedValue: 0
+  hitOptions:
+    resetAnimationOnHit: 1
+    weakHit:
+      hitParticle: {fileID: 0}
+      killTime: 0
+      hitSound: {fileID: 0}
+      spawnPoint: 1
+      _freezingTime:
+        _serializedValue: 0
+      _animationSpeed:
+        _serializedValue: 429496729
+      autoHitStop: 1
+      sticky: 0
+      _hitStop:
+        _serializedValue: 429496729
+      mirrorOn2PSide: 0
+      shakeCharacterOnHit: 1
+      shakeCameraOnHit: 1
+      _shakeDensity:
+        _serializedValue: 3435973836
+      _shakeCameraDensity:
+        _serializedValue: 3435973836
+      editorToggle: 0
+    mediumHit:
+      hitParticle: {fileID: 0}
+      killTime: 0
+      hitSound: {fileID: 0}
+      spawnPoint: 1
+      _freezingTime:
+        _serializedValue: 0
+      _animationSpeed:
+        _serializedValue: 429496729
+      autoHitStop: 1
+      sticky: 0
+      _hitStop:
+        _serializedValue: 429496729
+      mirrorOn2PSide: 0
+      shakeCharacterOnHit: 1
+      shakeCameraOnHit: 1
+      _shakeDensity:
+        _serializedValue: 3435973836
+      _shakeCameraDensity:
+        _serializedValue: 3435973836
+      editorToggle: 0
+    heavyHit:
+      hitParticle: {fileID: 0}
+      killTime: 0
+      hitSound: {fileID: 0}
+      spawnPoint: 1
+      _freezingTime:
+        _serializedValue: 0
+      _animationSpeed:
+        _serializedValue: 429496729
+      autoHitStop: 1
+      sticky: 0
+      _hitStop:
+        _serializedValue: 429496729
+      mirrorOn2PSide: 0
+      shakeCharacterOnHit: 1
+      shakeCameraOnHit: 1
+      _shakeDensity:
+        _serializedValue: 3435973836
+      _shakeCameraDensity:
+        _serializedValue: 3435973836
+      editorToggle: 0
+    crumpleHit:
+      hitParticle: {fileID: 0}
+      killTime: 0
+      hitSound: {fileID: 0}
+      spawnPoint: 1
+      _freezingTime:
+        _serializedValue: 0
+      _animationSpeed:
+        _serializedValue: 429496729
+      autoHitStop: 1
+      sticky: 0
+      _hitStop:
+        _serializedValue: 429496729
+      mirrorOn2PSide: 0
+      shakeCharacterOnHit: 1
+      shakeCameraOnHit: 1
+      _shakeDensity:
+        _serializedValue: 3435973836
+      _shakeCameraDensity:
+        _serializedValue: 3435973836
+      editorToggle: 0
+    customHit1:
+      hitParticle: {fileID: 0}
+      killTime: 0
+      hitSound: {fileID: 0}
+      spawnPoint: 1
+      _freezingTime:
+        _serializedValue: 0
+      _animationSpeed:
+        _serializedValue: 429496729
+      autoHitStop: 1
+      sticky: 0
+      _hitStop:
+        _serializedValue: 429496729
+      mirrorOn2PSide: 0
+      shakeCharacterOnHit: 1
+      shakeCameraOnHit: 1
+      _shakeDensity:
+        _serializedValue: 3435973836
+      _shakeCameraDensity:
+        _serializedValue: 3435973836
+      editorToggle: 0
+    customHit2:
+      hitParticle: {fileID: 0}
+      killTime: 0
+      hitSound: {fileID: 0}
+      spawnPoint: 1
+      _freezingTime:
+        _serializedValue: 0
+      _animationSpeed:
+        _serializedValue: 429496729
+      autoHitStop: 1
+      sticky: 0
+      _hitStop:
+        _serializedValue: 429496729
+      mirrorOn2PSide: 0
+      shakeCharacterOnHit: 1
+      shakeCameraOnHit: 1
+      _shakeDensity:
+        _serializedValue: 3435973836
+      _shakeCameraDensity:
+        _serializedValue: 3435973836
+      editorToggle: 0
+    customHit3:
+      hitParticle: {fileID: 0}
+      killTime: 0
+      hitSound: {fileID: 0}
+      spawnPoint: 1
+      _freezingTime:
+        _serializedValue: 0
+      _animationSpeed:
+        _serializedValue: 429496729
+      autoHitStop: 1
+      sticky: 0
+      _hitStop:
+        _serializedValue: 429496729
+      mirrorOn2PSide: 0
+      shakeCharacterOnHit: 1
+      shakeCameraOnHit: 1
+      _shakeDensity:
+        _serializedValue: 3435973836
+      _shakeCameraDensity:
+        _serializedValue: 3435973836
+      editorToggle: 0
+    customHit4:
+      hitParticle: {fileID: 0}
+      killTime: 0
+      hitSound: {fileID: 0}
+      spawnPoint: 1
+      _freezingTime:
+        _serializedValue: 0
+      _animationSpeed:
+        _serializedValue: 429496729
+      autoHitStop: 1
+      sticky: 0
+      _hitStop:
+        _serializedValue: 429496729
+      mirrorOn2PSide: 0
+      shakeCharacterOnHit: 1
+      shakeCameraOnHit: 1
+      _shakeDensity:
+        _serializedValue: 3435973836
+      _shakeCameraDensity:
+        _serializedValue: 3435973836
+      editorToggle: 0
+    customHit5:
+      hitParticle: {fileID: 0}
+      killTime: 0
+      hitSound: {fileID: 0}
+      spawnPoint: 1
+      _freezingTime:
+        _serializedValue: 0
+      _animationSpeed:
+        _serializedValue: 429496729
+      autoHitStop: 1
+      sticky: 0
+      _hitStop:
+        _serializedValue: 429496729
+      mirrorOn2PSide: 0
+      shakeCharacterOnHit: 1
+      shakeCameraOnHit: 1
+      _shakeDensity:
+        _serializedValue: 3435973836
+      _shakeCameraDensity:
+        _serializedValue: 3435973836
+      editorToggle: 0
+    customHit6:
+      hitParticle: {fileID: 0}
+      killTime: 0
+      hitSound: {fileID: 0}
+      spawnPoint: 1
+      _freezingTime:
+        _serializedValue: 0
+      _animationSpeed:
+        _serializedValue: 429496729
+      autoHitStop: 1
+      sticky: 0
+      _hitStop:
+        _serializedValue: 429496729
+      mirrorOn2PSide: 0
+      shakeCharacterOnHit: 1
+      shakeCameraOnHit: 1
+      _shakeDensity:
+        _serializedValue: 3435973836
+      _shakeCameraDensity:
+        _serializedValue: 3435973836
+      editorToggle: 0
+  player1_Inputs: []
+  player2_Inputs: []
+  inputOptions:
+    inputManagerType: 0
+    cInputAllowDuplicates: 0
+    cInputGravity: 3
+    cInputSensitivity: 3
+    cInputDeadZone: 0.001
+    cInputSkin: {fileID: 0}
+    controlFreakPrefab: {fileID: 0}
+    controlFreak2Prefab: {fileID: 0}
+    controlFreakDeadZone: 0.5
+    forceDigitalInput: 1
+    confirmButton: 0
+    cancelButton: 0
+  stages: []
+  characters: []
+  teamModes: []
+  debugOptions:
+    debugMode: 0
+    emulateNetwork: 0
+    trainingModeDebugger: 0
+    preloadedObjects: 0
+    inputsToggle: 0
+    networkToggle: 0
+    recordToggle: 0
+    hitboxColorsToggle: 0
+    displayCollisionMassGizmos: 0
+    connectionLog: 1
+    ping: 1
+    frameDelay: 1
+    currentLocalFrame: 1
+    currentNetworkFrame: 1
+    rollbackLog: 0
+    stateTrackerTest: 0
+    recordMatchTools: 0
+    playbackPhysics: 0
+    displayInputsNetwork: 0
+    displayInputsVersus: 0
+    displayInputsTraining: 0
+    displayInputsStoryMode: 0
+    displayInputsChallengeMode: 0
+    p1DebugInfo:
+      toggle: 0
+      currentMove: 1
+      position: 1
+      lifePoints: 1
+      gaugePoints: 1
+      currentState: 0
+      currentSubState: 0
+      stunTime: 1
+      comboHits: 1
+      comboDamage: 1
+      inputs: 1
+      buttonSequence: 0
+      aiWeightList: 0
+    p2DebugInfo:
+      toggle: 0
+      currentMove: 1
+      position: 1
+      lifePoints: 1
+      gaugePoints: 1
+      currentState: 0
+      currentSubState: 0
+      stunTime: 1
+      comboHits: 1
+      comboDamage: 1
+      inputs: 1
+      buttonSequence: 0
+      aiWeightList: 0
+  trainingModeOptions:
+    freezeTime: 0
+    p1StartingLife: 100
+    p2StartingLife: 100
+    p1StartingGauge: 0
+    p2StartingGauge: 0
+    p1Life: 0
+    p1Gauge: 0
+    p2Life: 0
+    p2Gauge: 0
+    refillTime: 3
+  challengeModeOptions: []
+  aiOptions:
+    engine: 0
+    attackWhenEnemyIsDown: 0
+    moveWhenEnemyIsDown: 0
+    inputFrequency: 0.3
+    behaviourToggle: 0
+    distanceBehaviour: []
+    multiCoreSupport: 1
+    persistentBehavior: 0
+    difficultyToggle: 0
+    difficultySettings: []
+    selectedDifficultyLevel: 2
+    selectedDifficulty:
+      difficultyLevel: 0
+      overrideTimeBetweenDecisions: 0
+      timeBetweenDecisions: 0
+      overrideTimeBetweenActions: 0
+      timeBetweenActions: 0.05
+      overrideAggressiveness: 0
+      aggressiveness: 0.5
+      overrideRuleCompliance: 0
+      ruleCompliance: 0.9
+      overrideComboEfficiency: 0
+      comboEfficiency: 1
+      startupBehavior: 0
+  networkOptions:
+    forceAnimationControl: 0
+    disableRootMotion: 0
+    disableBlending: 0
+    disableRotationBlend: 0
+    applyFrameDelayOffline: 0
+    recordingBuffer: 0
+    port: 1337
+    floatDesynchronizationThreshold: 0.5
+    logSyncMsg: 0
+    postRollbackRecording: 0
+    generateVariableLog: 0
+    textFilePath: 
+    networkService: 0
+    authKey: 
+    lobbies:
+    - lobbyName: 
+      matchMakingType: 0
+      gameMode: 0
+      allowPrivateRooms: 0
+      matchMakingToggle: 0
+      winnerToggle: 0
+      loserToggle: 0
+      matchMakingUserData: []
+      winnerUserData: []
+      loserUserData: []
+    photonHostingService: 0
+    playFabTitleId: 
+    photonApplicationId: 
+    lanDiscoveryPort: 1338
+    lanDiscoveryBroadcastInterval: 1
+    lanDiscoverySearchInterval: 5
+    lanDiscoverySearchTimeout: 120
+    allowRollBacks: 0
+    rollbackBalancing: 1
+    frameDelayType: 2
+    minFrameDelay: 4
+    maxFrameDelay: 30
+    defaultFrameDelay: 6
+    maxBufferSize: 30
+    maxFastForwards: 10
+    spawnBuffer: 30
+    ufeTrackers: 0
+    networkMessageSize: 2
+    onlySendInputChanges: 1
+    inputMessageFrequency: 0
+    synchronizationMessageFrequency: 0
+    synchronizationAction: 1
+  music: 1
+  musicVolume: 1
+  soundfx: 1
+  soundfxVolume: 1
+  colorStateOne: {r: 1, g: 0, b: 0, a: 1}
+  colorIsHit: {r: 1, g: 0, b: 1, a: 1}
+  colorBodyCollider: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  colorNoCollider: {r: 1, g: 1, b: 1, a: 1}
+  colorThrowCollider: {r: 1, g: 0, b: 0.5, a: 1}
+  colorPhysicalInvincibleCollider: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  colorProjectileInvincibleCollider: {r: 0, g: 1, b: 1, a: 1}
+  colorHitCollider: {r: 0, g: 1, b: 0, a: 1}
+  colorLowHitBoxType: {r: 1, g: 0, b: 0, a: 1}
+  colorHighHitBoxType: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  colorCollisionBox: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  colorHurtBoxThrow: {r: 1, g: 0.5, b: 0, a: 1}
+  colorHurtBoxNotThrow: {r: 0, g: 1, b: 1, a: 1}
+  colorBlockBox: {r: 0, g: 0, b: 1, a: 1}
+  colorStateOneFill: 0
+  colorIsHitFill: 0
+  colorBodyColliderFill: 0
+  colorNoColliderFill: 0
+  colorThrowColliderFill: 0
+  colorPhysicalInvincibleColliderFill: 0
+  colorProjectileInvincibleColliderFill: 0
+  colorHitColliderFill: 0
+  colorLowHitBoxTypeFill: 0
+  colorHighHitBoxTypeFill: 0
+  colorCollisionBoxFill: 0
+  colorHurtBoxThrowFill: 0
+  colorHurtBoxNotThrowFill: 0
+  colorBlockBoxFill: 0
